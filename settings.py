@@ -1,6 +1,7 @@
 class BaseConfig(object):
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:qazwsx@10.11.100.130:3306/melvinDB?charset=utf8"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:qazwsx@10.11.100.130:3306/hlwxz01?charset=utf8"
     SECRET_KEY = "ghca@222"
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 class DevConfig(BaseConfig):
     """

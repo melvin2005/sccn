@@ -10,9 +10,11 @@ def create_app():
     app = Flask(__name__)
 
     #读取配置文件
-    app.config.from_object('settins.BaseConfig')
+    app.config.from_object('settings.BaseConfig')
 
     #注册蓝图
     app.register_blueprint(lg)
+
+    dbconn.init_app(app)
 
     return app
