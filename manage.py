@@ -21,4 +21,5 @@ def before():
 
 if __name__=='__main__':
     app.run()
+    # manager使用方法：cmd中执行python manage.py runserver -h 127.0.0.1 -p 8080
     # manager.run()

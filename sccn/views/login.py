@@ -32,4 +32,4 @@ def login():
     dbconn.session.remove()
 
     #此处需要定义返回信息，否则app.py里的make_response函数将会报错
-    return 'user may not exists'
+    return 'User {0} not found!'.format(username)
